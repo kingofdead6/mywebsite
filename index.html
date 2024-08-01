@@ -3,113 +3,136 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Youcef Kahlouche - CV</title>
+    <title>Youcef Kahlouche - Web and Game Developer</title>
     <style>
         body {
+            background-color: #121212;
+            color: #ffffff;
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            box-sizing: border-box;
+        }
+        header {
+            background-color: #1f1f1f;
+            padding: 20px;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+        }
+        nav {
+            text-align: center;
+            margin: 20px 0;
+        }
+        nav a {
+            color: #ffffff;
+            margin: 0 15px;
+            text-decoration: none;
+        }
+        section {
+            padding: 20px;
+            margin: 20px;
+            border: 1px solid #333333;
+            border-radius: 8px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        footer {
+            background-color: #1f1f1f;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+        .dark-theme {
             background-color: #121212;
             color: #ffffff;
         }
-        .container {
-            max-width: 1000px;
-            margin: 0 auto;
-            padding: 20px;
+        .light-theme {
+            background-color: #ffffff;
+            color: #000000;
         }
-        .header {
+        .section-title {
             text-align: center;
-            padding: 50px 0;
         }
-        .header h1 {
-            font-size: 2.5em;
-            margin: 0;
-        }
-        .header p {
-            font-size: 1.2em;
-            color: #cccccc;
-        }
-        .section {
-            margin-bottom: 50px;
-        }
-        .section h2 {
-            font-size: 2em;
-            border-bottom: 2px solid #444;
-            padding-bottom: 10px;
-            margin-bottom: 20px;
-        }
-        .section ul {
+        ul {
             list-style-type: none;
             padding: 0;
         }
-        .section ul li {
-            background-color: #1e1e1e;
-            padding: 10px;
-            margin-bottom: 10px;
-            border-radius: 5px;
+        ul li {
+            margin: 10px 0;
         }
-        .footer {
-            text-align: center;
-            padding: 20px 0;
-            font-size: 0.9em;
-            color: #888888;
-        }
-        @media (max-width: 768px) {
-            .container {
-                padding: 10px;
-            }
-            .header h1 {
-                font-size: 2em;
-            }
-            .header p {
-                font-size: 1em;
-            }
-            .section h2 {
-                font-size: 1.5em;
-            }
+        ul li strong {
+            color: #76c7c0;
         }
     </style>
 </head>
 <body>
+    <header>
+        <h1>Youcef Kahlouche</h1>
+        <p>Web and Game Developer</p>
+    </header>
+    <nav>
+        <a href="#about">About Me</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#experience">Experience</a>
+        <a href="#education">Education</a>
+        <a href="#contact">Contact</a>
+    </nav>
     <div class="container">
-        <div class="header">
-            <h1>Youcef Kahlouche</h1>
-            <p>Game and Web Developer | Designer</p>
-        </div>
-        <div class="section">
-            <h2>Profile</h2>
-            <p>Passionate game and web developer with expertise in C++, SFML, C, Java, Python, HTML, CSS, and JavaScript. Experienced in designing posters, logos, and various digital media. Adept at creating engaging and interactive user experiences.</p>
-        </div>
-        <div class="section">
-            <h2>Skills</h2>
+        <section id="about">
+            <h2 class="section-title">About Me</h2>
+            <p>Hello! I'm Youcef Kahlouche, a passionate web and game developer with a knack for creating engaging and dynamic user experiences. I love exploring new technologies and continuously improving my skills.</p>
+        </section>
+        <section id="projects">
+            <h2 class="section-title">Projects</h2>
+            <p>Here are some of the projects I have worked on:</p>
             <ul>
-                <li>C++, SFML</li>
-                <li>C, Java, Python</li>
+                <li><strong>Super Mario Game:</strong> Developed a clone of the classic Super Mario game using C++ and SFML.</li>
+                <li><strong>Flying Spaceships Game:</strong> Created a spaceship shooter game with exciting gameplay mechanics.</li>
+                <li><strong>AI Chat Bot:</strong> Built an AI chatbot to answer customer queries, integrated with various web platforms.</li>
+                <li><strong>Various Web Projects:</strong> Developed multiple websites with responsive design and user-friendly interfaces.</li>
+            </ul>
+        </section>
+        <section id="skills">
+            <h2 class="section-title">Skills</h2>
+            <p>These are some of the skills I possess:</p>
+            <ul>
                 <li>HTML, CSS, JavaScript</li>
-                <li>Web Development</li>
-                <li>Game Development</li>
+                <li>React, Vue.js</li>
+                <li>Node.js, Express</li>
+                <li>Unity, Unreal Engine</li>
+                <li>Python, C++, SFML, C, Java</li>
                 <li>Poster and Logo Design</li>
             </ul>
-        </div>
-        <div class="section">
-            <h2>Projects</h2>
+        </section>
+        <section id="experience">
+            <h2 class="section-title">Experience</h2>
+            <p>Details about my work experience:</p>
             <ul>
-                <li><strong>Super Mario Game:</strong> Developed a clone of the classic Super Mario game.</li>
-                <li><strong>Flying Spaceships Game:</strong> Created a spaceship shooter game.</li>
-                <li><strong>AI Chat Bot:</strong> Built an AI chatbot for answering customer queries.</li>
-                <li><strong>Multiple Other Projects:</strong> Worked on various web and game development projects.</li>
+                <li><strong>Web Developer:</strong> Developed and maintained several websites, ensuring responsive design and optimized performance.</li>
+                <li><strong>Game Developer:</strong> Created engaging games with immersive experiences, focusing on gameplay mechanics and visual aesthetics.</li>
             </ul>
-        </div>
-        <div class="section">
-            <h2>Education</h2>
+        </section>
+        <section id="education">
+            <h2 class="section-title">Education</h2>
+            <p>My educational background:</p>
             <ul>
                 <li><strong>ESI Algiers:</strong> Studied Computer Science, specializing in game and web development.</li>
             </ul>
-        </div>
-        <div class="footer">
-            <p>&copy; 2024 Youcef Kahlouche. All rights reserved.</p>
-        </div>
+        </section>
+        <section id="contact">
+            <h2 class="section-title">Contact</h2>
+            <p>Feel free to reach out to me:</p>
+            <p>Email: youcef@example.com</p>
+        </section>
     </div>
+    <footer>
+        <p>&copy; 2024 Youcef Kahlouche</p>
+    </footer>
 </body>
 </html>
